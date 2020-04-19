@@ -3,31 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12C5F161244C836800400062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C5F160244C836800400062 /* Main.storyboard */; };
+		12C5F164244C998F00400062 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 12C5F163244C998F00400062 /* FloatingPanel */; };
+		12C5F166244C9B1800400062 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C5F165244C9B1800400062 /* TabItem.swift */; };
+		12C5F169244C9C3900400062 /* ColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C5F168244C9C3900400062 /* ColoredView.swift */; };
 		5992DA352449CF47009BCD0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992DA342449CF47009BCD0A /* AppDelegate.swift */; };
-		5992DA372449CF47009BCD0A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992DA362449CF47009BCD0A /* SceneDelegate.swift */; };
-		5992DA392449CF47009BCD0A /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992DA382449CF47009BCD0A /* LeftViewController.swift */; };
 		5992DA3E2449CF49009BCD0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5992DA3D2449CF49009BCD0A /* Assets.xcassets */; };
 		5992DA412449CF49009BCD0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5992DA3F2449CF49009BCD0A /* LaunchScreen.storyboard */; };
-		5992DA492449D1B1009BCD0A /* FloatingTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992DA482449D1B1009BCD0A /* FloatingTabBarController.swift */; };
-		5992DA4B2449D2A3009BCD0A /* RightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992DA4A2449D2A3009BCD0A /* RightViewController.swift */; };
-		59FBD560244C1CAD0053DDFB /* UIView+constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FBD55F244C1CAD0053DDFB /* UIView+constraints.swift */; };
+		5992DA492449D1B1009BCD0A /* FloatingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5992DA482449D1B1009BCD0A /* FloatingTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12C5F160244C836800400062 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		12C5F165244C9B1800400062 /* TabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		12C5F168244C9C3900400062 /* ColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColoredView.swift; sourceTree = "<group>"; };
 		5992DA312449CF47009BCD0A /* custom-tab-bar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "custom-tab-bar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5992DA342449CF47009BCD0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5992DA362449CF47009BCD0A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5992DA382449CF47009BCD0A /* LeftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
 		5992DA3D2449CF49009BCD0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5992DA402449CF49009BCD0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5992DA422449CF49009BCD0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5992DA482449D1B1009BCD0A /* FloatingTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabBarController.swift; sourceTree = "<group>"; };
-		5992DA4A2449D2A3009BCD0A /* RightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightViewController.swift; sourceTree = "<group>"; };
-		59FBD55F244C1CAD0053DDFB /* UIView+constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+constraints.swift"; sourceTree = "<group>"; };
+		5992DA482449D1B1009BCD0A /* FloatingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,37 +34,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C5F164244C998F00400062 /* FloatingPanel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		592E17DB244B3EA500270379 /* Supporting Files */ = {
+		12C5F167244C9C2900400062 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				5992DA3D2449CF49009BCD0A /* Assets.xcassets */,
+				12C5F168244C9C3900400062 /* ColoredView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		592E17DB244B3EA500270379 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				5992DA422449CF49009BCD0A /* Info.plist */,
+				5992DA342449CF47009BCD0A /* AppDelegate.swift */,
 				5992DA3F2449CF49009BCD0A /* LaunchScreen.storyboard */,
+				12C5F160244C836800400062 /* Main.storyboard */,
+				5992DA3D2449CF49009BCD0A /* Assets.xcassets */,
 			);
-			path = "Supporting Files";
+			path = App;
 			sourceTree = "<group>";
 		};
-		592E17DC244B3EFF00270379 /* Controllers */ = {
+		592E17DC244B3EFF00270379 /* FloatingTabView */ = {
 			isa = PBXGroup;
 			children = (
-				5992DA482449D1B1009BCD0A /* FloatingTabBarController.swift */,
-				5992DA382449CF47009BCD0A /* LeftViewController.swift */,
-				5992DA4A2449D2A3009BCD0A /* RightViewController.swift */,
+				5992DA482449D1B1009BCD0A /* FloatingTabView.swift */,
+				12C5F165244C9B1800400062 /* TabItem.swift */,
 			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		592E17DD244B3F0800270379 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
+			path = FloatingTabView;
 			sourceTree = "<group>";
 		};
 		5992DA282449CF47009BCD0A = {
@@ -87,22 +89,11 @@
 		5992DA332449CF47009BCD0A /* custom-tab-bar */ = {
 			isa = PBXGroup;
 			children = (
-				59FBD55E244C1C8D0053DDFB /* Common */,
-				5992DA342449CF47009BCD0A /* AppDelegate.swift */,
-				5992DA362449CF47009BCD0A /* SceneDelegate.swift */,
-				592E17DD244B3F0800270379 /* View */,
-				592E17DC244B3EFF00270379 /* Controllers */,
-				592E17DB244B3EA500270379 /* Supporting Files */,
+				592E17DB244B3EA500270379 /* App */,
+				12C5F167244C9C2900400062 /* Views */,
+				592E17DC244B3EFF00270379 /* FloatingTabView */,
 			);
 			path = "custom-tab-bar";
-			sourceTree = "<group>";
-		};
-		59FBD55E244C1C8D0053DDFB /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				59FBD55F244C1CAD0053DDFB /* UIView+constraints.swift */,
-			);
-			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -121,6 +112,9 @@
 			dependencies = (
 			);
 			name = "custom-tab-bar";
+			packageProductDependencies = (
+				12C5F163244C998F00400062 /* FloatingPanel */,
+			);
 			productName = "custom-tab-bar";
 			productReference = 5992DA312449CF47009BCD0A /* custom-tab-bar.app */;
 			productType = "com.apple.product-type.application";
@@ -149,6 +143,9 @@
 				Base,
 			);
 			mainGroup = 5992DA282449CF47009BCD0A;
+			packageReferences = (
+				12C5F162244C998F00400062 /* XCRemoteSwiftPackageReference "FloatingPanel" */,
+			);
 			productRefGroup = 5992DA322449CF47009BCD0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -163,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12C5F161244C836800400062 /* Main.storyboard in Resources */,
 				5992DA412449CF49009BCD0A /* LaunchScreen.storyboard in Resources */,
 				5992DA3E2449CF49009BCD0A /* Assets.xcassets in Resources */,
 			);
@@ -175,12 +173,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5992DA392449CF47009BCD0A /* LeftViewController.swift in Sources */,
-				59FBD560244C1CAD0053DDFB /* UIView+constraints.swift in Sources */,
-				5992DA492449D1B1009BCD0A /* FloatingTabBarController.swift in Sources */,
-				5992DA4B2449D2A3009BCD0A /* RightViewController.swift in Sources */,
+				5992DA492449D1B1009BCD0A /* FloatingTabView.swift in Sources */,
+				12C5F169244C9C3900400062 /* ColoredView.swift in Sources */,
 				5992DA352449CF47009BCD0A /* AppDelegate.swift in Sources */,
-				5992DA372449CF47009BCD0A /* SceneDelegate.swift in Sources */,
+				12C5F166244C9B1800400062 /* TabItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,12 +313,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 89EXPD2XDP;
-				INFOPLIST_FILE = "custom-tab-bar/Supporting Files/Info.plist";
+				DEVELOPMENT_TEAM = AXLC3PQNC8;
+				INFOPLIST_FILE = "custom-tab-bar/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kawrantinlegoff.custom-tab-bar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -335,12 +332,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 89EXPD2XDP;
-				INFOPLIST_FILE = "custom-tab-bar/Supporting Files/Info.plist";
+				DEVELOPMENT_TEAM = AXLC3PQNC8;
+				INFOPLIST_FILE = "custom-tab-bar/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kawrantinlegoff.custom-tab-bar";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -370,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12C5F162244C998F00400062 /* XCRemoteSwiftPackageReference "FloatingPanel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SCENEE/FloatingPanel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12C5F163244C998F00400062 /* FloatingPanel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12C5F162244C998F00400062 /* XCRemoteSwiftPackageReference "FloatingPanel" */;
+			productName = FloatingPanel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5992DA292449CF47009BCD0A /* Project object */;
 }
